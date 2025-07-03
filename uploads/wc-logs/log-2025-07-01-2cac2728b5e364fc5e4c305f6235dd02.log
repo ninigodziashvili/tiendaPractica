@@ -1,0 +1,4 @@
+2025-07-01T08:58:59+00:00 INFO Payment gateway enabled: "Stripe"
+2025-07-01T09:01:45+00:00 INFO Payment gateway enabled: "Pagos por cheque"
+2025-07-01T09:01:48+00:00 INFO Payment gateway enabled: "Transferencia bancaria directa"
+2025-07-01T09:02:05+00:00 INFO Payment gateway enabled: "Contra reembolso"
