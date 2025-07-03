@@ -2,4 +2,117 @@
 Theme Name: Storefront Child
 Template: storefront
 Version: 1.0
-*/
+*/                          
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --azul-marino: #001f3f;
+  --rojo-susanita: #b33939;
+  --fondo-suave: #fef9f6;
+  --blanco: #fff;
+}
+/* Fondo de la sección que contiene los productos */
+.woocommerce.archive .site-main {
+  background-color: #F2F2F2; /* gris cálido claro */
+  padding: 40px 20px;
+}
+
+
+/* SECCIÓN PRODUCTOS RELACIONADOS */
+.related.products {
+  background-color: var(--fondo-suave);
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.related.products > h2 {
+  font-family: 'Nunito', ;  
+  font-size: 2.2em;
+  color: var(--azul-marino);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.related.products > h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--rojo-susanita);
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* TARJETAS DE PRODUCTO */
+ul.products li.product {
+  background-color: var(--blanco);
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.woocommerce-products-header__title{
+    text-align: center;
+    font-size: 2.2em;
+
+}
+ul.products li.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.woocommerce ul.products li.product .price {
+  color: slategrey !important;
+  font-size: 1.1em;
+}
+    
+    
+/* IMAGEN CIRCULAR CON BISEL SUAVE */
+ul.products li.product img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--fondo-suave);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+ul.products li.product:hover img {
+  transform: scale(1.03);
+}
+
+/* NOMBRE DEL PRODUCTO */
+ul.products li.product h2.woocommerce-loop-product__title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
+  color: var(--azul-marino);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.woocommerce ul.products li.product h2:hover {
+  text-decoration: underline;
+  color: var(--rojo-susanita); 
+}
+
+/* BOTÓN */
+ul.products li.product .button {
+  background-color: var(--rojo-susanita);
+  color: var(--blanco);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+ul.products li.product .button:hover {  
+  background-color: var(--azul-marino);
+}
