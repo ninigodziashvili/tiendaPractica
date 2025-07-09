@@ -1,7 +1,7 @@
-/*
+ <?php
+ /* 
 template name: Politicas de privacidad
 */
-<?php
 get_header();
 ?>
     <style>
